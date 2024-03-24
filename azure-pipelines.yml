@@ -62,7 +62,7 @@ stages:
       - task: AzureRmWebAppDeployment@4
         inputs:
           ConnectionType: 'AzureRM' #Connection type
-          azureSubscription: 'Free Trial'
+          azureSubscription: 'gab-dotNetsc'
           appType: 'webApp'  #Required when ConnectionType = AzureRM. App Service type
           WebAppName: 'gab-webapp99' #<App Service Name.>
           packageForLinux: '$(Pipeline.Workspace)'
